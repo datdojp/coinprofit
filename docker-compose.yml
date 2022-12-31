@@ -1,0 +1,12 @@
+version: "3.7"
+services:
+  coinprofit:
+    image: node:latest
+    container_name: coinprofit
+    entrypoint:
+      - sh
+    tty: true
+    stdin_open: true
+    volumes:
+      - .:/coinprofit
+    working_dir: /coinprofit
